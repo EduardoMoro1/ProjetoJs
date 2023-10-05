@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Colisao Inelastica</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="myscript.js"></script>
+</head>
+<body>
+
+    <div class="calculadora">
+    <h1>Calculadora de Colisão Inelástica</h1> <!--Título da website-->
+    <form action="#" method="post" id="formulário"> <!--Definição de que os dados serão enviados para a própria página, o método é https e a identificação é formulário-->
+
+        <div> <!--Célula massaum-->
+            <label for="massaum">Massa do 1º Corpo:</label>
+            <input type="number" name="m1" id="massaum">
+        </div>
+
+        <div> <!--Célula velocidadeum-->
+            <label for="velocidadeum">Velocidade do 1º Corpo:</label>
+            <input type="number" name="v1" id="velocidadeum">
+        </div>
+
+        <div>
+            <label for="massadois">Massa do 2º Corpo:</label>
+            <input type="number" name="m2" id="massadois">
+        </div>
+
+        <div>
+            <label for="velocidadedois">Velocidade do 2º Corpo:</label>
+            <input type="number" name="v2" id="velocidadedois">
+        </div>
+
+        <h1>Calcular Resultado</h1>
+        <button type="button" id="Calcular">Calcular Resultado</button>
+        <p id="resultado"></p>
+    </form>
+    </div>    
+</body>
+</html>
