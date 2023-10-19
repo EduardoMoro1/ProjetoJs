@@ -1,13 +1,14 @@
 function calcular(){
 
-    const m1 = Number(document.querySelector("#massaum").value)
-    const v1 = Number(document.querySelector("#velocidadeum").value);
-    const m2 = Number(document.querySelector("#massadois").value);
-    const v2 = Number(document.querySelector("#velocidadedois").value);
-    const vf = Number(document.querySelector("#velocidadefinal").value);
-
+    const e = Number(document.querySelector("#e").value)
+    const Vaf = Number(document.querySelector("#velocidadedeafastamento").value)
+    const Vap = Number(document.querySelector("#velocidadedeaproximacao").value)
+    const V2 = Number(document.querySelector("#velocidadedois").value)
+    const V1 = Number(document.querySelector("#velocidadeum").value)
     
-    document.querySelector("#resultado").textContent = "Resultado";
+    const e =Vaf/Vap=V2-V1/V1-V2; // equação
+
+    document.querySelector("#resultado").textContent = "Resultado" + e.toFixed(2);
 }
 
 document.addEventListener("DOMContentLoaded", () => {

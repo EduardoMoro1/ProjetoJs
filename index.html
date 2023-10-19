@@ -14,27 +14,29 @@
     <h1>Calculadora de Colisão Inelástica</h1> <!--Título da website-->
     <form action="#" method="post" id="formulário"> <!--Definição de que os dados serão enviados para a própria página, o método é https e a identificação é formulário-->
 
-        <div> <!--Célula massaum-->
-            <label for="massaum">Massa do 1º Corpo:</label>
-            <input type="number" name="m1" id="massaum">
+        <div> <!--Célula velocidadedeafastamento-->
+            <label for="velocidadedeafastamento">Velocidade de Afastamento:</label>
+            <input type="number" name="Vaf" id="velocidadedeafastamento">
         </div>
 
-        <div> <!--Célula velocidadeum-->
-            <label for="velocidadeum">Velocidade do 1º Corpo:</label>
-            <input type="number" name="v1" id="velocidadeum">
+        <div> <!--Célula velocidadedeaproximacao-->
+            <label for="velocidadedeaproximacao">Velocidade de Aproximação:</label>
+            <input type="number" name="Vap" id="velocidadedeaproximacao">
         </div>
 
-        <div>
-            <label for="massadois">Massa do 2º Corpo:</label>
-            <input type="number" name="m2" id="massadois">
-        </div>
-
-        <div>
-            <label for="velocidadedois">Velocidade do 2º Corpo:</label>
+        <div> <!--Célula v2-->
+            <label for="velocidadedois">Velocidade dois:</label>
             <input type="number" name="v2" id="velocidadedois">
         </div>
 
-        <h1>Calcular Resultado</h1>
+
+        <div> <!--Célula v1-->
+            <label for="velocidadeum">Velocidade um:</label>
+            <input type="number" name="v1" id="velocidadeum">
+        </div>
+
+        
+        <h1>Calcular Resultado</h1> <!--Lugar dos resultados-->
         <button type="button" id="Calcular">Calcular Resultado</button>
         <p id="resultado"></p>
     </form>
